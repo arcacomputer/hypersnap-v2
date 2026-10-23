@@ -1,0 +1,31 @@
+{
+  "name": "hypersnap-v2",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "GPL-3.0-only",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "proto": "pbjs -t json -p proto/definitions -o src/generated/descriptor.json proto/definitions/rpc.proto proto/definitions/hyper.proto proto/definitions/replication.proto proto/definitions/admin_rpc.proto proto/definitions/gossip.proto proto/definitions/node_state.proto proto/definitions/sync_trie.proto",
+    "test": "tsx --test test/**/*.test.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.worker.json --noEmit",
+    "follow": "tsx src/cli/follow.ts",
+    "serve": "tsx src/cli/serve.ts",
+    "record-fixtures": "tsx src/cli/record-fixtures.ts"
+  },
+  "dependencies": {
+    "@noble/curves": "^1.9.7",
+    "@noble/hashes": "^1.8.0",
+    "protobufjs": "^7.5.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261023.1",
+    "@types/node": "^22.18.6",
+    "protobufjs-cli": "^1.1.3",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "wrangler": "^4.40.2"
+  }
+}

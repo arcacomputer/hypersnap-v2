@@ -1,0 +1,39 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "hypersnap-v2",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-10-23",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true,
+    "traces": {
+      "enabled": true
+    }
+  },
+  "triggers": {
+    "crons": ["*/1 * * * *"]
+  },
+  "vars": {
+    "ORACLE_HTTP": "https://haatz.quilibrium.com",
+    "SHARDS": "0,2",
+    "MAX_PER_SHARD": "2"
+  },
+  "durable_objects": {
+    "bindings": [
+      { "name": "FOLLOWER", "class_name": "FollowerDurableObject" },
+      { "name": "FID_STATE", "class_name": "FidStateDurableObject" }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["FollowerDurableObject", "FidStateDurableObject"]
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "BLOCK_ARCHIVE",
+      "bucket_name": "hypersnap-v2-blocks"
+    }
+  ]
+}

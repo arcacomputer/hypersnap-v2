@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2022"],
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "types": ["@cloudflare/workers-types"],
+    "resolveJsonModule": true,
+    "rootDir": "."
+  },
+  "include": ["src/**/*.ts", "src/generated/worker-configuration.d.ts"],
+  "exclude": ["src/cli/**/*.ts", "src/state/local.ts", "src/chain/node-grpc.ts", "src/archive/fs.ts"]
+}
