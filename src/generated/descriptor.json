@@ -1,0 +1,4042 @@
+{
+  "nested": {
+    "HubService": {
+      "methods": {
+        "SubmitMessage": {
+          "requestType": "Message",
+          "responseType": "Message"
+        },
+        "SubmitBulkMessages": {
+          "requestType": "SubmitBulkMessagesRequest",
+          "responseType": "SubmitBulkMessagesResponse"
+        },
+        "ValidateMessage": {
+          "requestType": "Message",
+          "responseType": "ValidationResponse"
+        },
+        "GetBlocks": {
+          "requestType": "BlocksRequest",
+          "responseType": "Block",
+          "responseStream": true
+        },
+        "GetShardChunks": {
+          "requestType": "ShardChunksRequest",
+          "responseType": "ShardChunksResponse"
+        },
+        "GetInfo": {
+          "requestType": "GetInfoRequest",
+          "responseType": "GetInfoResponse"
+        },
+        "GetFids": {
+          "requestType": "FidsRequest",
+          "responseType": "FidsResponse"
+        },
+        "GetConnectedPeers": {
+          "requestType": "GetConnectedPeersRequest",
+          "responseType": "GetConnectedPeersResponse"
+        },
+        "GetMeshView": {
+          "requestType": "GetMeshViewRequest",
+          "responseType": "MeshView"
+        },
+        "GetMeshTopology": {
+          "requestType": "GetMeshViewRequest",
+          "responseType": "MeshTopology"
+        },
+        "Subscribe": {
+          "requestType": "SubscribeRequest",
+          "responseType": "HubEvent",
+          "responseStream": true
+        },
+        "GetEvent": {
+          "requestType": "EventRequest",
+          "responseType": "HubEvent"
+        },
+        "GetEvents": {
+          "requestType": "EventsRequest",
+          "responseType": "EventsResponse"
+        },
+        "GetCast": {
+          "requestType": "CastId",
+          "responseType": "Message"
+        },
+        "GetCastsByFid": {
+          "requestType": "FidRequest",
+          "responseType": "MessagesResponse"
+        },
+        "GetCastsByParent": {
+          "requestType": "CastsByParentRequest",
+          "responseType": "MessagesResponse"
+        },
+        "GetCastsByMention": {
+          "requestType": "FidRequest",
+          "responseType": "MessagesResponse"
+        },
+        "GetReaction": {
+          "requestType": "ReactionRequest",
+          "responseType": "Message"
+        },
+        "GetReactionsByFid": {
+          "requestType": "ReactionsByFidRequest",
+          "responseType": "MessagesResponse"
+        },
+        "GetReactionsByCast": {
+          "requestType": "ReactionsByTargetRequest",
+          "responseType": "MessagesResponse"
+        },
+        "GetReactionsByTarget": {
+          "requestType": "ReactionsByTargetRequest",
+          "responseType": "MessagesResponse"
+        },
+        "GetUserData": {
+          "requestType": "UserDataRequest",
+          "responseType": "Message"
+        },
+        "GetUserDataByFid": {
+          "requestType": "FidRequest",
+          "responseType": "MessagesResponse"
+        },
+        "GetUsernameProof": {
+          "requestType": "UsernameProofRequest",
+          "responseType": "UserNameProof"
+        },
+        "GetUserNameProofsByFid": {
+          "requestType": "FidRequest",
+          "responseType": "UsernameProofsResponse"
+        },
+        "GetFidByName": {
+          "requestType": "NameLookupRequest",
+          "responseType": "FidResponse"
+        },
+        "GetAddressesByName": {
+          "requestType": "NameLookupRequest",
+          "responseType": "NameToAddressResponse"
+        },
+        "GetFidByAddress": {
+          "requestType": "AddressLookupRequest",
+          "responseType": "AddressToFidResponse"
+        },
+        "GetVerification": {
+          "requestType": "VerificationRequest",
+          "responseType": "Message"
+        },
+        "GetVerificationsByFid": {
+          "requestType": "FidRequest",
+          "responseType": "MessagesResponse"
+        },
+        "GetOnChainSigner": {
+          "requestType": "SignerRequest",
+          "responseType": "OnChainEvent"
+        },
+        "GetOnChainSignersByFid": {
+          "requestType": "FidRequest",
+          "responseType": "OnChainEventResponse"
+        },
+        "GetSigner": {
+          "requestType": "SignerRequest",
+          "responseType": "SignerResponse"
+        },
+        "GetSignersByFid": {
+          "requestType": "SignersByFidRequest",
+          "responseType": "SignersByFidResponse"
+        },
+        "GetOnChainEvents": {
+          "requestType": "OnChainEventRequest",
+          "responseType": "OnChainEventResponse"
+        },
+        "GetIdRegistryOnChainEvent": {
+          "requestType": "FidRequest",
+          "responseType": "OnChainEvent"
+        },
+        "GetIdRegistryOnChainEventByAddress": {
+          "requestType": "IdRegistryEventByAddressRequest",
+          "responseType": "OnChainEvent"
+        },
+        "GetCurrentStorageLimitsByFid": {
+          "requestType": "FidRequest",
+          "responseType": "StorageLimitsResponse"
+        },
+        "GetFidAddressType": {
+          "requestType": "FidAddressTypeRequest",
+          "responseType": "FidAddressTypeResponse"
+        },
+        "GetLink": {
+          "requestType": "LinkRequest",
+          "responseType": "Message"
+        },
+        "GetLinksByFid": {
+          "requestType": "LinksByFidRequest",
+          "responseType": "MessagesResponse"
+        },
+        "GetLinksByTarget": {
+          "requestType": "LinksByTargetRequest",
+          "responseType": "MessagesResponse"
+        },
+        "GetLinkCompactStateMessageByFid": {
+          "requestType": "FidRequest",
+          "responseType": "MessagesResponse"
+        },
+        "GetAllCastMessagesByFid": {
+          "requestType": "FidTimestampRequest",
+          "responseType": "MessagesResponse"
+        },
+        "GetAllReactionMessagesByFid": {
+          "requestType": "FidTimestampRequest",
+          "responseType": "MessagesResponse"
+        },
+        "GetAllVerificationMessagesByFid": {
+          "requestType": "FidTimestampRequest",
+          "responseType": "MessagesResponse"
+        },
+        "GetAllUserDataMessagesByFid": {
+          "requestType": "FidTimestampRequest",
+          "responseType": "MessagesResponse"
+        },
+        "GetAllLinkMessagesByFid": {
+          "requestType": "FidTimestampRequest",
+          "responseType": "MessagesResponse"
+        },
+        "GetAllLendStorageMessagesByFid": {
+          "requestType": "FidTimestampRequest",
+          "responseType": "MessagesResponse"
+        },
+        "GetTrieMetadataByPrefix": {
+          "requestType": "TrieNodeMetadataRequest",
+          "responseType": "TrieNodeMetadataResponse"
+        }
+      }
+    },
+    "Message": {
+      "oneofs": {
+        "_dataBytes": {
+          "oneof": [
+            "dataBytes"
+          ]
+        }
+      },
+      "fields": {
+        "data": {
+          "type": "MessageData",
+          "id": 1
+        },
+        "hash": {
+          "type": "bytes",
+          "id": 2
+        },
+        "hashScheme": {
+          "type": "HashScheme",
+          "id": 3
+        },
+        "signature": {
+          "type": "bytes",
+          "id": 4
+        },
+        "signatureScheme": {
+          "type": "SignatureScheme",
+          "id": 5
+        },
+        "signer": {
+          "type": "bytes",
+          "id": 6
+        },
+        "dataBytes": {
+          "type": "bytes",
+          "id": 7,
+          "options": {
+            "proto3_optional": true
+          }
+        }
+      }
+    },
+    "MessageData": {
+      "oneofs": {
+        "body": {
+          "oneof": [
+            "castAddBody",
+            "castRemoveBody",
+            "reactionBody",
+            "verificationAddAddressBody",
+            "verificationRemoveBody",
+            "userDataBody",
+            "linkBody",
+            "usernameProofBody",
+            "frameActionBody",
+            "linkCompactStateBody",
+            "lendStorageBody",
+            "keyAddBody",
+            "keyRemoveBody"
+          ]
+        }
+      },
+      "fields": {
+        "type": {
+          "type": "MessageType",
+          "id": 1
+        },
+        "fid": {
+          "type": "uint64",
+          "id": 2
+        },
+        "timestamp": {
+          "type": "uint32",
+          "id": 3
+        },
+        "network": {
+          "type": "FarcasterNetwork",
+          "id": 4
+        },
+        "castAddBody": {
+          "type": "CastAddBody",
+          "id": 5
+        },
+        "castRemoveBody": {
+          "type": "CastRemoveBody",
+          "id": 6
+        },
+        "reactionBody": {
+          "type": "ReactionBody",
+          "id": 7
+        },
+        "verificationAddAddressBody": {
+          "type": "VerificationAddAddressBody",
+          "id": 9
+        },
+        "verificationRemoveBody": {
+          "type": "VerificationRemoveBody",
+          "id": 10
+        },
+        "userDataBody": {
+          "type": "UserDataBody",
+          "id": 12
+        },
+        "linkBody": {
+          "type": "LinkBody",
+          "id": 14
+        },
+        "usernameProofBody": {
+          "type": "UserNameProof",
+          "id": 15
+        },
+        "frameActionBody": {
+          "type": "FrameActionBody",
+          "id": 16
+        },
+        "linkCompactStateBody": {
+          "type": "LinkCompactStateBody",
+          "id": 17
+        },
+        "lendStorageBody": {
+          "type": "LendStorageBody",
+          "id": 18
+        },
+        "keyAddBody": {
+          "type": "KeyAddBody",
+          "id": 19
+        },
+        "keyRemoveBody": {
+          "type": "KeyRemoveBody",
+          "id": 20
+        }
+      }
+    },
+    "HashScheme": {
+      "values": {
+        "HASH_SCHEME_NONE": 0,
+        "HASH_SCHEME_BLAKE3": 1
+      }
+    },
+    "SignatureScheme": {
+      "values": {
+        "SIGNATURE_SCHEME_NONE": 0,
+        "SIGNATURE_SCHEME_ED25519": 1,
+        "SIGNATURE_SCHEME_EIP712": 2
+      }
+    },
+    "MessageType": {
+      "values": {
+        "MESSAGE_TYPE_NONE": 0,
+        "MESSAGE_TYPE_CAST_ADD": 1,
+        "MESSAGE_TYPE_CAST_REMOVE": 2,
+        "MESSAGE_TYPE_REACTION_ADD": 3,
+        "MESSAGE_TYPE_REACTION_REMOVE": 4,
+        "MESSAGE_TYPE_LINK_ADD": 5,
+        "MESSAGE_TYPE_LINK_REMOVE": 6,
+        "MESSAGE_TYPE_VERIFICATION_ADD_ETH_ADDRESS": 7,
+        "MESSAGE_TYPE_VERIFICATION_REMOVE": 8,
+        "MESSAGE_TYPE_USER_DATA_ADD": 11,
+        "MESSAGE_TYPE_USERNAME_PROOF": 12,
+        "MESSAGE_TYPE_FRAME_ACTION": 13,
+        "MESSAGE_TYPE_LINK_COMPACT_STATE": 14,
+        "MESSAGE_TYPE_LEND_STORAGE": 15,
+        "MESSAGE_TYPE_KEY_ADD": 16,
+        "MESSAGE_TYPE_KEY_REMOVE": 17
+      }
+    },
+    "FarcasterNetwork": {
+      "values": {
+        "FARCASTER_NETWORK_NONE": 0,
+        "FARCASTER_NETWORK_MAINNET": 1,
+        "FARCASTER_NETWORK_TESTNET": 2,
+        "FARCASTER_NETWORK_DEVNET": 3
+      }
+    },
+    "UserDataBody": {
+      "fields": {
+        "type": {
+          "type": "UserDataType",
+          "id": 1
+        },
+        "value": {
+          "type": "string",
+          "id": 2
+        }
+      }
+    },
+    "UserDataType": {
+      "values": {
+        "USER_DATA_TYPE_NONE": 0,
+        "USER_DATA_TYPE_PFP": 1,
+        "USER_DATA_TYPE_DISPLAY": 2,
+        "USER_DATA_TYPE_BIO": 3,
+        "USER_DATA_TYPE_URL": 5,
+        "USER_DATA_TYPE_USERNAME": 6,
+        "USER_DATA_TYPE_LOCATION": 7,
+        "USER_DATA_TYPE_TWITTER": 8,
+        "USER_DATA_TYPE_GITHUB": 9,
+        "USER_DATA_TYPE_BANNER": 10,
+        "USER_DATA_PRIMARY_ADDRESS_ETHEREUM": 11,
+        "USER_DATA_PRIMARY_ADDRESS_SOLANA": 12,
+        "USER_DATA_TYPE_PROFILE_TOKEN": 13,
+        "USER_DATA_TYPE_LIVE_AT": 14
+      }
+    },
+    "Embed": {
+      "oneofs": {
+        "embed": {
+          "oneof": [
+            "url",
+            "castId"
+          ]
+        }
+      },
+      "fields": {
+        "url": {
+          "type": "string",
+          "id": 1
+        },
+        "castId": {
+          "type": "CastId",
+          "id": 2
+        }
+      }
+    },
+    "CastType": {
+      "values": {
+        "CAST": 0,
+        "LONG_CAST": 1,
+        "TEN_K_CAST": 2
+      }
+    },
+    "CastAddBody": {
+      "oneofs": {
+        "parent": {
+          "oneof": [
+            "parentCastId",
+            "parentUrl"
+          ]
+        }
+      },
+      "fields": {
+        "embedsDeprecated": {
+          "rule": "repeated",
+          "type": "string",
+          "id": 1
+        },
+        "mentions": {
+          "rule": "repeated",
+          "type": "uint64",
+          "id": 2
+        },
+        "parentCastId": {
+          "type": "CastId",
+          "id": 3
+        },
+        "parentUrl": {
+          "type": "string",
+          "id": 7
+        },
+        "text": {
+          "type": "string",
+          "id": 4
+        },
+        "mentionsPositions": {
+          "rule": "repeated",
+          "type": "uint32",
+          "id": 5
+        },
+        "embeds": {
+          "rule": "repeated",
+          "type": "Embed",
+          "id": 6
+        },
+        "type": {
+          "type": "CastType",
+          "id": 8
+        }
+      }
+    },
+    "CastRemoveBody": {
+      "fields": {
+        "targetHash": {
+          "type": "bytes",
+          "id": 1
+        }
+      }
+    },
+    "CastId": {
+      "fields": {
+        "fid": {
+          "type": "uint64",
+          "id": 1
+        },
+        "hash": {
+          "type": "bytes",
+          "id": 2
+        }
+      }
+    },
+    "ReactionBody": {
+      "oneofs": {
+        "target": {
+          "oneof": [
+            "targetCastId",
+            "targetUrl"
+          ]
+        }
+      },
+      "fields": {
+        "type": {
+          "type": "ReactionType",
+          "id": 1
+        },
+        "targetCastId": {
+          "type": "CastId",
+          "id": 2
+        },
+        "targetUrl": {
+          "type": "string",
+          "id": 3
+        }
+      }
+    },
+    "ReactionType": {
+      "values": {
+        "REACTION_TYPE_NONE": 0,
+        "REACTION_TYPE_LIKE": 1,
+        "REACTION_TYPE_RECAST": 2
+      }
+    },
+    "Protocol": {
+      "values": {
+        "PROTOCOL_ETHEREUM": 0,
+        "PROTOCOL_SOLANA": 1
+      }
+    },
+    "VerificationAddAddressBody": {
+      "fields": {
+        "address": {
+          "type": "bytes",
+          "id": 1
+        },
+        "claimSignature": {
+          "type": "bytes",
+          "id": 2
+        },
+        "blockHash": {
+          "type": "bytes",
+          "id": 3
+        },
+        "verificationType": {
+          "type": "uint32",
+          "id": 4
+        },
+        "chainId": {
+          "type": "uint32",
+          "id": 5
+        },
+        "protocol": {
+          "type": "Protocol",
+          "id": 7
+        }
+      }
+    },
+    "VerificationRemoveBody": {
+      "fields": {
+        "address": {
+          "type": "bytes",
+          "id": 1
+        },
+        "protocol": {
+          "type": "Protocol",
+          "id": 2
+        }
+      }
+    },
+    "LinkBody": {
+      "oneofs": {
+        "_displayTimestamp": {
+          "oneof": [
+            "displayTimestamp"
+          ]
+        },
+        "target": {
+          "oneof": [
+            "targetFid"
+          ]
+        }
+      },
+      "fields": {
+        "type": {
+          "type": "string",
+          "id": 1
+        },
+        "displayTimestamp": {
+          "type": "uint32",
+          "id": 2,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "targetFid": {
+          "type": "uint64",
+          "id": 3
+        }
+      }
+    },
+    "LinkCompactStateBody": {
+      "fields": {
+        "type": {
+          "type": "string",
+          "id": 1
+        },
+        "targetFids": {
+          "rule": "repeated",
+          "type": "uint64",
+          "id": 2
+        }
+      }
+    },
+    "FrameActionBody": {
+      "fields": {
+        "url": {
+          "type": "bytes",
+          "id": 1
+        },
+        "buttonIndex": {
+          "type": "uint32",
+          "id": 2
+        },
+        "castId": {
+          "type": "CastId",
+          "id": 3
+        },
+        "inputText": {
+          "type": "bytes",
+          "id": 4
+        },
+        "state": {
+          "type": "bytes",
+          "id": 5
+        },
+        "transactionId": {
+          "type": "bytes",
+          "id": 6
+        },
+        "address": {
+          "type": "bytes",
+          "id": 7
+        }
+      }
+    },
+    "StorageUnitType": {
+      "values": {
+        "UNIT_TYPE_LEGACY": 0,
+        "UNIT_TYPE_2024": 1,
+        "UNIT_TYPE_2025": 2
+      }
+    },
+    "LendStorageBody": {
+      "fields": {
+        "toFid": {
+          "type": "uint64",
+          "id": 1
+        },
+        "numUnits": {
+          "type": "uint64",
+          "id": 2
+        },
+        "unitType": {
+          "type": "StorageUnitType",
+          "id": 3
+        }
+      }
+    },
+    "KeyAddBody": {
+      "fields": {
+        "key": {
+          "type": "bytes",
+          "id": 1
+        },
+        "keyType": {
+          "type": "uint32",
+          "id": 2
+        },
+        "custodySignature": {
+          "type": "bytes",
+          "id": 3
+        },
+        "deadline": {
+          "type": "uint32",
+          "id": 4
+        },
+        "nonce": {
+          "type": "uint32",
+          "id": 5
+        },
+        "metadata": {
+          "type": "bytes",
+          "id": 6
+        },
+        "metadataType": {
+          "type": "uint32",
+          "id": 7
+        },
+        "registrationTxHash": {
+          "type": "bytes",
+          "id": 8
+        },
+        "scopes": {
+          "rule": "repeated",
+          "type": "int32",
+          "id": 9
+        },
+        "ttl": {
+          "type": "uint32",
+          "id": 10
+        }
+      }
+    },
+    "KeyRemoveBody": {
+      "fields": {
+        "key": {
+          "type": "bytes",
+          "id": 1
+        },
+        "signature": {
+          "type": "bytes",
+          "id": 2
+        },
+        "signatureType": {
+          "type": "uint32",
+          "id": 3
+        },
+        "deadline": {
+          "type": "uint32",
+          "id": 4
+        },
+        "nonce": {
+          "type": "uint32",
+          "id": 5
+        }
+      }
+    },
+    "UserNameType": {
+      "values": {
+        "USERNAME_TYPE_NONE": 0,
+        "USERNAME_TYPE_FNAME": 1,
+        "USERNAME_TYPE_ENS_L1": 2,
+        "USERNAME_TYPE_BASENAME": 3
+      }
+    },
+    "UserNameProof": {
+      "fields": {
+        "timestamp": {
+          "type": "uint64",
+          "id": 1
+        },
+        "name": {
+          "type": "bytes",
+          "id": 2
+        },
+        "owner": {
+          "type": "bytes",
+          "id": 3
+        },
+        "signature": {
+          "type": "bytes",
+          "id": 4
+        },
+        "fid": {
+          "type": "uint64",
+          "id": 5
+        },
+        "type": {
+          "type": "UserNameType",
+          "id": 6
+        }
+      }
+    },
+    "Validator": {
+      "fields": {
+        "fid": {
+          "type": "uint64",
+          "id": 1
+        },
+        "signer": {
+          "type": "bytes",
+          "id": 2
+        },
+        "rpcAddress": {
+          "type": "string",
+          "id": 3
+        },
+        "shardIndex": {
+          "type": "uint32",
+          "id": 4
+        },
+        "currentHeight": {
+          "type": "uint64",
+          "id": 5
+        }
+      }
+    },
+    "ValidatorSet": {
+      "fields": {
+        "validators": {
+          "rule": "repeated",
+          "type": "Validator",
+          "id": 1
+        }
+      }
+    },
+    "Height": {
+      "fields": {
+        "shardIndex": {
+          "type": "uint32",
+          "id": 1
+        },
+        "blockNumber": {
+          "type": "uint64",
+          "id": 2
+        }
+      }
+    },
+    "VoteType": {
+      "values": {
+        "PREVOTE": 0,
+        "PRECOMMIT": 1
+      }
+    },
+    "ShardHash": {
+      "fields": {
+        "shardIndex": {
+          "type": "uint32",
+          "id": 1
+        },
+        "hash": {
+          "type": "bytes",
+          "id": 2
+        }
+      }
+    },
+    "Vote": {
+      "fields": {
+        "type": {
+          "type": "VoteType",
+          "id": 1
+        },
+        "height": {
+          "type": "Height",
+          "id": 2
+        },
+        "round": {
+          "type": "int64",
+          "id": 3
+        },
+        "value": {
+          "type": "ShardHash",
+          "id": 4
+        },
+        "voter": {
+          "type": "bytes",
+          "id": 5
+        }
+      }
+    },
+    "CommitSignature": {
+      "fields": {
+        "signer": {
+          "type": "bytes",
+          "id": 1
+        },
+        "signature": {
+          "type": "bytes",
+          "id": 2
+        }
+      }
+    },
+    "Commits": {
+      "fields": {
+        "height": {
+          "type": "Height",
+          "id": 1
+        },
+        "round": {
+          "type": "int64",
+          "id": 2
+        },
+        "value": {
+          "type": "ShardHash",
+          "id": 3
+        },
+        "signatures": {
+          "rule": "repeated",
+          "type": "CommitSignature",
+          "id": 4
+        }
+      }
+    },
+    "Proposal": {
+      "fields": {
+        "height": {
+          "type": "Height",
+          "id": 1
+        },
+        "round": {
+          "type": "int64",
+          "id": 2
+        },
+        "polRound": {
+          "type": "int64",
+          "id": 3
+        },
+        "proposer": {
+          "type": "bytes",
+          "id": 4
+        },
+        "value": {
+          "type": "ShardHash",
+          "id": 5
+        }
+      }
+    },
+    "FullProposal": {
+      "oneofs": {
+        "proposedValue": {
+          "oneof": [
+            "block",
+            "shard"
+          ]
+        }
+      },
+      "fields": {
+        "height": {
+          "type": "Height",
+          "id": 1
+        },
+        "round": {
+          "type": "int64",
+          "id": 2
+        },
+        "proposer": {
+          "type": "bytes",
+          "id": 3
+        },
+        "block": {
+          "type": "Block",
+          "id": 4
+        },
+        "shard": {
+          "type": "ShardChunk",
+          "id": 5
+        }
+      }
+    },
+    "DecidedValue": {
+      "oneofs": {
+        "value": {
+          "oneof": [
+            "block",
+            "shard"
+          ]
+        }
+      },
+      "fields": {
+        "block": {
+          "type": "Block",
+          "id": 2
+        },
+        "shard": {
+          "type": "ShardChunk",
+          "id": 3
+        }
+      }
+    },
+    "ReadNodeMessage": {
+      "oneofs": {
+        "readNodeMessage": {
+          "oneof": [
+            "decidedValue"
+          ]
+        }
+      },
+      "fields": {
+        "decidedValue": {
+          "type": "DecidedValue",
+          "id": 1
+        }
+      }
+    },
+    "ConsensusMessage": {
+      "oneofs": {
+        "consensusMessage": {
+          "oneof": [
+            "vote",
+            "proposal"
+          ]
+        }
+      },
+      "fields": {
+        "vote": {
+          "type": "Vote",
+          "id": 1
+        },
+        "proposal": {
+          "type": "Proposal",
+          "id": 2
+        },
+        "signature": {
+          "type": "bytes",
+          "id": 3
+        }
+      }
+    },
+    "BlockEventType": {
+      "values": {
+        "BLOCK_EVENT_TYPE_HEARTBEAT": 0,
+        "BLOCK_EVENT_TYPE_MERGE_MESSAGE": 1
+      }
+    },
+    "HeartbeatEventBody": {
+      "fields": {}
+    },
+    "MergeMessageEventBody": {
+      "fields": {
+        "message": {
+          "type": "Message",
+          "id": 1
+        }
+      }
+    },
+    "BlockEventData": {
+      "oneofs": {
+        "body": {
+          "oneof": [
+            "heartbeatEventBody",
+            "mergeMessageEventBody"
+          ]
+        }
+      },
+      "fields": {
+        "seqnum": {
+          "type": "uint64",
+          "id": 1
+        },
+        "type": {
+          "type": "BlockEventType",
+          "id": 2
+        },
+        "blockNumber": {
+          "type": "uint64",
+          "id": 3
+        },
+        "eventIndex": {
+          "type": "uint64",
+          "id": 4
+        },
+        "blockTimestamp": {
+          "type": "uint64",
+          "id": 5
+        },
+        "heartbeatEventBody": {
+          "type": "HeartbeatEventBody",
+          "id": 6
+        },
+        "mergeMessageEventBody": {
+          "type": "MergeMessageEventBody",
+          "id": 7
+        }
+      }
+    },
+    "BlockEvent": {
+      "fields": {
+        "hash": {
+          "type": "bytes",
+          "id": 1
+        },
+        "data": {
+          "type": "BlockEventData",
+          "id": 2
+        }
+      }
+    },
+    "BlockHeader": {
+      "fields": {
+        "height": {
+          "type": "Height",
+          "id": 1
+        },
+        "timestamp": {
+          "type": "uint64",
+          "id": 2
+        },
+        "version": {
+          "type": "uint32",
+          "id": 3
+        },
+        "chainId": {
+          "type": "FarcasterNetwork",
+          "id": 4
+        },
+        "shardWitnessesHash": {
+          "type": "bytes",
+          "id": 5
+        },
+        "parentHash": {
+          "type": "bytes",
+          "id": 6
+        },
+        "stateRoot": {
+          "type": "bytes",
+          "id": 7
+        },
+        "eventsHash": {
+          "type": "bytes",
+          "id": 8
+        }
+      }
+    },
+    "ShardWitness": {
+      "fields": {
+        "shardChunkWitnesses": {
+          "rule": "repeated",
+          "type": "ShardChunkWitness",
+          "id": 1
+        }
+      }
+    },
+    "ShardChunkWitness": {
+      "fields": {
+        "height": {
+          "type": "Height",
+          "id": 1
+        },
+        "shardRoot": {
+          "type": "bytes",
+          "id": 2
+        },
+        "shardHash": {
+          "type": "bytes",
+          "id": 3
+        }
+      }
+    },
+    "Block": {
+      "fields": {
+        "header": {
+          "type": "BlockHeader",
+          "id": 1
+        },
+        "hash": {
+          "type": "bytes",
+          "id": 2
+        },
+        "shardWitness": {
+          "type": "ShardWitness",
+          "id": 3
+        },
+        "commits": {
+          "type": "Commits",
+          "id": 4
+        },
+        "transactions": {
+          "rule": "repeated",
+          "type": "Transaction",
+          "id": 5
+        },
+        "events": {
+          "rule": "repeated",
+          "type": "BlockEvent",
+          "id": 6
+        }
+      }
+    },
+    "ShardHeader": {
+      "fields": {
+        "height": {
+          "type": "Height",
+          "id": 1
+        },
+        "timestamp": {
+          "type": "uint64",
+          "id": 2
+        },
+        "parentHash": {
+          "type": "bytes",
+          "id": 3
+        },
+        "shardRoot": {
+          "type": "bytes",
+          "id": 4
+        }
+      }
+    },
+    "ShardChunk": {
+      "fields": {
+        "header": {
+          "type": "ShardHeader",
+          "id": 1
+        },
+        "hash": {
+          "type": "bytes",
+          "id": 2
+        },
+        "transactions": {
+          "rule": "repeated",
+          "type": "Transaction",
+          "id": 3
+        },
+        "commits": {
+          "type": "Commits",
+          "id": 4
+        }
+      }
+    },
+    "Transaction": {
+      "fields": {
+        "fid": {
+          "type": "uint64",
+          "id": 1
+        },
+        "userMessages": {
+          "rule": "repeated",
+          "type": "Message",
+          "id": 2
+        },
+        "systemMessages": {
+          "rule": "repeated",
+          "type": "ValidatorMessage",
+          "id": 3
+        },
+        "accountRoot": {
+          "type": "bytes",
+          "id": 4
+        }
+      }
+    },
+    "FnameTransfer": {
+      "fields": {
+        "id": {
+          "type": "uint64",
+          "id": 1
+        },
+        "fromFid": {
+          "type": "uint64",
+          "id": 2
+        },
+        "proof": {
+          "type": "UserNameProof",
+          "id": 4
+        }
+      }
+    },
+    "ValidatorMessage": {
+      "fields": {
+        "onChainEvent": {
+          "type": "OnChainEvent",
+          "id": 1
+        },
+        "fnameTransfer": {
+          "type": "FnameTransfer",
+          "id": 2
+        },
+        "blockEvent": {
+          "type": "BlockEvent",
+          "id": 3
+        }
+      }
+    },
+    "MempoolMessage": {
+      "oneofs": {
+        "mempoolMessage": {
+          "oneof": [
+            "userMessage"
+          ]
+        }
+      },
+      "fields": {
+        "userMessage": {
+          "type": "Message",
+          "id": 1
+        }
+      }
+    },
+    "StatusMessage": {
+      "fields": {
+        "peerId": {
+          "type": "bytes",
+          "id": 1
+        },
+        "height": {
+          "type": "Height",
+          "id": 2
+        },
+        "minHeight": {
+          "type": "Height",
+          "id": 3
+        }
+      }
+    },
+    "SyncValueRequest": {
+      "fields": {
+        "height": {
+          "type": "Height",
+          "id": 1
+        }
+      }
+    },
+    "SyncVoteSetRequest": {
+      "fields": {
+        "height": {
+          "type": "Height",
+          "id": 1
+        },
+        "round": {
+          "type": "int64",
+          "id": 2
+        }
+      }
+    },
+    "SyncRequest": {
+      "oneofs": {
+        "syncRequest": {
+          "oneof": [
+            "value",
+            "voteSet"
+          ]
+        }
+      },
+      "fields": {
+        "value": {
+          "type": "SyncValueRequest",
+          "id": 1
+        },
+        "voteSet": {
+          "type": "SyncVoteSetRequest",
+          "id": 2
+        }
+      }
+    },
+    "SyncValueResponse": {
+      "fields": {
+        "height": {
+          "type": "Height",
+          "id": 1
+        },
+        "fullValue": {
+          "type": "bytes",
+          "id": 2
+        },
+        "commits": {
+          "type": "Commits",
+          "id": 3
+        }
+      }
+    },
+    "SyncVoteSetResponse": {
+      "fields": {
+        "height": {
+          "type": "Height",
+          "id": 1
+        },
+        "round": {
+          "type": "int64",
+          "id": 2
+        },
+        "votes": {
+          "rule": "repeated",
+          "type": "Vote",
+          "id": 3
+        },
+        "signatures": {
+          "rule": "repeated",
+          "type": "bytes",
+          "id": 4
+        }
+      }
+    },
+    "SyncResponse": {
+      "oneofs": {
+        "syncResponse": {
+          "oneof": [
+            "value",
+            "voteSet"
+          ]
+        }
+      },
+      "fields": {
+        "value": {
+          "type": "SyncValueResponse",
+          "id": 1
+        },
+        "voteSet": {
+          "type": "SyncVoteSetResponse",
+          "id": 2
+        }
+      }
+    },
+    "OnChainEventType": {
+      "values": {
+        "EVENT_TYPE_NONE": 0,
+        "EVENT_TYPE_SIGNER": 1,
+        "EVENT_TYPE_SIGNER_MIGRATED": 2,
+        "EVENT_TYPE_ID_REGISTER": 3,
+        "EVENT_TYPE_STORAGE_RENT": 4,
+        "EVENT_TYPE_TIER_PURCHASE": 5
+      }
+    },
+    "OnChainEvent": {
+      "oneofs": {
+        "body": {
+          "oneof": [
+            "signerEventBody",
+            "signerMigratedEventBody",
+            "idRegisterEventBody",
+            "storageRentEventBody",
+            "tierPurchaseEventBody"
+          ]
+        }
+      },
+      "fields": {
+        "type": {
+          "type": "OnChainEventType",
+          "id": 1
+        },
+        "chainId": {
+          "type": "uint32",
+          "id": 2
+        },
+        "blockNumber": {
+          "type": "uint32",
+          "id": 3
+        },
+        "blockHash": {
+          "type": "bytes",
+          "id": 4
+        },
+        "blockTimestamp": {
+          "type": "uint64",
+          "id": 5
+        },
+        "transactionHash": {
+          "type": "bytes",
+          "id": 6
+        },
+        "logIndex": {
+          "type": "uint32",
+          "id": 7
+        },
+        "fid": {
+          "type": "uint64",
+          "id": 8
+        },
+        "signerEventBody": {
+          "type": "SignerEventBody",
+          "id": 9
+        },
+        "signerMigratedEventBody": {
+          "type": "SignerMigratedEventBody",
+          "id": 10
+        },
+        "idRegisterEventBody": {
+          "type": "IdRegisterEventBody",
+          "id": 11
+        },
+        "storageRentEventBody": {
+          "type": "StorageRentEventBody",
+          "id": 12
+        },
+        "tierPurchaseEventBody": {
+          "type": "TierPurchaseBody",
+          "id": 15
+        },
+        "txIndex": {
+          "type": "uint32",
+          "id": 13
+        },
+        "version": {
+          "type": "uint32",
+          "id": 14
+        }
+      }
+    },
+    "TierType": {
+      "values": {
+        "None": 0,
+        "Pro": 1
+      }
+    },
+    "TierPurchaseBody": {
+      "fields": {
+        "tierType": {
+          "type": "TierType",
+          "id": 1
+        },
+        "forDays": {
+          "type": "uint64",
+          "id": 2
+        },
+        "payer": {
+          "type": "bytes",
+          "id": 3
+        }
+      }
+    },
+    "SignerEventType": {
+      "values": {
+        "SIGNER_EVENT_TYPE_NONE": 0,
+        "SIGNER_EVENT_TYPE_ADD": 1,
+        "SIGNER_EVENT_TYPE_REMOVE": 2,
+        "SIGNER_EVENT_TYPE_ADMIN_RESET": 3
+      }
+    },
+    "SignerEventBody": {
+      "fields": {
+        "key": {
+          "type": "bytes",
+          "id": 1
+        },
+        "keyType": {
+          "type": "uint32",
+          "id": 2
+        },
+        "eventType": {
+          "type": "SignerEventType",
+          "id": 3
+        },
+        "metadata": {
+          "type": "bytes",
+          "id": 4
+        },
+        "metadataType": {
+          "type": "uint32",
+          "id": 5
+        }
+      }
+    },
+    "SignerMigratedEventBody": {
+      "fields": {
+        "migratedAt": {
+          "type": "uint32",
+          "id": 1
+        }
+      }
+    },
+    "IdRegisterEventType": {
+      "values": {
+        "ID_REGISTER_EVENT_TYPE_NONE": 0,
+        "ID_REGISTER_EVENT_TYPE_REGISTER": 1,
+        "ID_REGISTER_EVENT_TYPE_TRANSFER": 2,
+        "ID_REGISTER_EVENT_TYPE_CHANGE_RECOVERY": 3
+      }
+    },
+    "IdRegisterEventBody": {
+      "fields": {
+        "to": {
+          "type": "bytes",
+          "id": 1
+        },
+        "eventType": {
+          "type": "IdRegisterEventType",
+          "id": 2
+        },
+        "from": {
+          "type": "bytes",
+          "id": 3
+        },
+        "recoveryAddress": {
+          "type": "bytes",
+          "id": 4
+        }
+      }
+    },
+    "StorageRentEventBody": {
+      "fields": {
+        "payer": {
+          "type": "bytes",
+          "id": 1
+        },
+        "units": {
+          "type": "uint32",
+          "id": 2
+        },
+        "expiry": {
+          "type": "uint32",
+          "id": 3
+        }
+      }
+    },
+    "HubEventType": {
+      "values": {
+        "HUB_EVENT_TYPE_NONE": 0,
+        "HUB_EVENT_TYPE_MERGE_MESSAGE": 1,
+        "HUB_EVENT_TYPE_PRUNE_MESSAGE": 2,
+        "HUB_EVENT_TYPE_REVOKE_MESSAGE": 3,
+        "HUB_EVENT_TYPE_MERGE_USERNAME_PROOF": 6,
+        "HUB_EVENT_TYPE_MERGE_ON_CHAIN_EVENT": 9,
+        "HUB_EVENT_TYPE_MERGE_FAILURE": 10,
+        "HUB_EVENT_TYPE_BLOCK_CONFIRMED": 11
+      }
+    },
+    "MergeMessageBody": {
+      "fields": {
+        "message": {
+          "type": "Message",
+          "id": 1
+        },
+        "deletedMessages": {
+          "rule": "repeated",
+          "type": "Message",
+          "id": 2
+        }
+      }
+    },
+    "MergeFailureBody": {
+      "fields": {
+        "message": {
+          "type": "Message",
+          "id": 1
+        },
+        "code": {
+          "type": "string",
+          "id": 2
+        },
+        "reason": {
+          "type": "string",
+          "id": 3
+        }
+      }
+    },
+    "PruneMessageBody": {
+      "fields": {
+        "message": {
+          "type": "Message",
+          "id": 1
+        }
+      }
+    },
+    "RevokeMessageBody": {
+      "fields": {
+        "message": {
+          "type": "Message",
+          "id": 1
+        }
+      }
+    },
+    "BlockConfirmedBody": {
+      "fields": {
+        "blockNumber": {
+          "type": "uint64",
+          "id": 1
+        },
+        "shardIndex": {
+          "type": "uint32",
+          "id": 2
+        },
+        "timestamp": {
+          "type": "uint64",
+          "id": 3
+        },
+        "blockHash": {
+          "type": "bytes",
+          "id": 4
+        },
+        "totalEvents": {
+          "type": "uint64",
+          "id": 5
+        },
+        "eventCountsByType": {
+          "keyType": "int32",
+          "type": "uint64",
+          "id": 6
+        },
+        "maxBlockEventSeqnum": {
+          "type": "uint64",
+          "id": 7
+        }
+      }
+    },
+    "MergeOnChainEventBody": {
+      "fields": {
+        "onChainEvent": {
+          "type": "OnChainEvent",
+          "id": 1
+        }
+      }
+    },
+    "MergeUserNameProofBody": {
+      "fields": {
+        "usernameProof": {
+          "type": "UserNameProof",
+          "id": 1
+        },
+        "deletedUsernameProof": {
+          "type": "UserNameProof",
+          "id": 2
+        },
+        "usernameProofMessage": {
+          "type": "Message",
+          "id": 3
+        },
+        "deletedUsernameProofMessage": {
+          "type": "Message",
+          "id": 4
+        }
+      }
+    },
+    "HubEvent": {
+      "oneofs": {
+        "body": {
+          "oneof": [
+            "mergeMessageBody",
+            "pruneMessageBody",
+            "revokeMessageBody",
+            "mergeUsernameProofBody",
+            "mergeOnChainEventBody",
+            "mergeFailure",
+            "blockConfirmedBody"
+          ]
+        }
+      },
+      "fields": {
+        "type": {
+          "type": "HubEventType",
+          "id": 1
+        },
+        "id": {
+          "type": "uint64",
+          "id": 2
+        },
+        "mergeMessageBody": {
+          "type": "MergeMessageBody",
+          "id": 3
+        },
+        "pruneMessageBody": {
+          "type": "PruneMessageBody",
+          "id": 4
+        },
+        "revokeMessageBody": {
+          "type": "RevokeMessageBody",
+          "id": 5
+        },
+        "mergeUsernameProofBody": {
+          "type": "MergeUserNameProofBody",
+          "id": 8
+        },
+        "mergeOnChainEventBody": {
+          "type": "MergeOnChainEventBody",
+          "id": 11
+        },
+        "mergeFailure": {
+          "type": "MergeFailureBody",
+          "id": 13
+        },
+        "blockConfirmedBody": {
+          "type": "BlockConfirmedBody",
+          "id": 16
+        },
+        "blockNumber": {
+          "type": "uint64",
+          "id": 12
+        },
+        "shardIndex": {
+          "type": "uint32",
+          "id": 14
+        },
+        "timestamp": {
+          "type": "uint64",
+          "id": 15
+        }
+      }
+    },
+    "BlocksRequest": {
+      "oneofs": {
+        "_stopBlockNumber": {
+          "oneof": [
+            "stopBlockNumber"
+          ]
+        }
+      },
+      "fields": {
+        "startBlockNumber": {
+          "type": "uint64",
+          "id": 2
+        },
+        "stopBlockNumber": {
+          "type": "uint64",
+          "id": 3,
+          "options": {
+            "proto3_optional": true
+          }
+        }
+      },
+      "reserved": [
+        [
+          1,
+          1
+        ],
+        "shard_id"
+      ]
+    },
+    "ShardChunksRequest": {
+      "oneofs": {
+        "_stopBlockNumber": {
+          "oneof": [
+            "stopBlockNumber"
+          ]
+        }
+      },
+      "fields": {
+        "shardId": {
+          "type": "uint32",
+          "id": 1
+        },
+        "startBlockNumber": {
+          "type": "uint64",
+          "id": 2
+        },
+        "stopBlockNumber": {
+          "type": "uint64",
+          "id": 3,
+          "options": {
+            "proto3_optional": true
+          }
+        }
+      }
+    },
+    "ShardChunksResponse": {
+      "fields": {
+        "shardChunks": {
+          "rule": "repeated",
+          "type": "ShardChunk",
+          "id": 1
+        }
+      }
+    },
+    "SubscribeRequest": {
+      "oneofs": {
+        "_fromId": {
+          "oneof": [
+            "fromId"
+          ]
+        },
+        "_shardIndex": {
+          "oneof": [
+            "shardIndex"
+          ]
+        }
+      },
+      "fields": {
+        "eventTypes": {
+          "rule": "repeated",
+          "type": "HubEventType",
+          "id": 1
+        },
+        "fromId": {
+          "type": "uint64",
+          "id": 2,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "shardIndex": {
+          "type": "uint32",
+          "id": 4,
+          "options": {
+            "proto3_optional": true
+          }
+        }
+      }
+    },
+    "DbStats": {
+      "fields": {
+        "numMessages": {
+          "type": "uint64",
+          "id": 1
+        },
+        "numFidRegistrations": {
+          "type": "uint64",
+          "id": 2
+        },
+        "approxSize": {
+          "type": "uint64",
+          "id": 4
+        }
+      }
+    },
+    "ShardInfo": {
+      "fields": {
+        "shardId": {
+          "type": "uint32",
+          "id": 1
+        },
+        "maxHeight": {
+          "type": "uint64",
+          "id": 2
+        },
+        "numMessages": {
+          "type": "uint64",
+          "id": 3
+        },
+        "numFidRegistrations": {
+          "type": "uint64",
+          "id": 4
+        },
+        "approxSize": {
+          "type": "uint64",
+          "id": 5
+        },
+        "blockDelay": {
+          "type": "uint64",
+          "id": 6
+        },
+        "mempoolSize": {
+          "type": "uint64",
+          "id": 7
+        },
+        "numOnchainEvents": {
+          "type": "uint64",
+          "id": 8
+        }
+      }
+    },
+    "GetInfoRequest": {
+      "fields": {}
+    },
+    "GetInfoResponse": {
+      "fields": {
+        "version": {
+          "type": "string",
+          "id": 1
+        },
+        "dbStats": {
+          "type": "DbStats",
+          "id": 5
+        },
+        "peerId": {
+          "type": "string",
+          "id": 6
+        },
+        "numShards": {
+          "type": "uint32",
+          "id": 8
+        },
+        "shardInfos": {
+          "rule": "repeated",
+          "type": "ShardInfo",
+          "id": 9
+        },
+        "nextEngineVersionTimestamp": {
+          "type": "uint64",
+          "id": 10
+        }
+      }
+    },
+    "EventRequest": {
+      "fields": {
+        "id": {
+          "type": "uint64",
+          "id": 1
+        },
+        "shardIndex": {
+          "type": "uint32",
+          "id": 5
+        }
+      }
+    },
+    "FidRequest": {
+      "oneofs": {
+        "_pageSize": {
+          "oneof": [
+            "pageSize"
+          ]
+        },
+        "_pageToken": {
+          "oneof": [
+            "pageToken"
+          ]
+        },
+        "_reverse": {
+          "oneof": [
+            "reverse"
+          ]
+        }
+      },
+      "fields": {
+        "fid": {
+          "type": "uint64",
+          "id": 1
+        },
+        "pageSize": {
+          "type": "uint32",
+          "id": 2,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "pageToken": {
+          "type": "bytes",
+          "id": 3,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "reverse": {
+          "type": "bool",
+          "id": 4,
+          "options": {
+            "proto3_optional": true
+          }
+        }
+      }
+    },
+    "FidTimestampRequest": {
+      "oneofs": {
+        "_pageSize": {
+          "oneof": [
+            "pageSize"
+          ]
+        },
+        "_pageToken": {
+          "oneof": [
+            "pageToken"
+          ]
+        },
+        "_reverse": {
+          "oneof": [
+            "reverse"
+          ]
+        },
+        "_startTimestamp": {
+          "oneof": [
+            "startTimestamp"
+          ]
+        },
+        "_stopTimestamp": {
+          "oneof": [
+            "stopTimestamp"
+          ]
+        }
+      },
+      "fields": {
+        "fid": {
+          "type": "uint64",
+          "id": 1
+        },
+        "pageSize": {
+          "type": "uint32",
+          "id": 2,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "pageToken": {
+          "type": "bytes",
+          "id": 3,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "reverse": {
+          "type": "bool",
+          "id": 4,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "startTimestamp": {
+          "type": "uint64",
+          "id": 5,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "stopTimestamp": {
+          "type": "uint64",
+          "id": 6,
+          "options": {
+            "proto3_optional": true
+          }
+        }
+      }
+    },
+    "FidsRequest": {
+      "oneofs": {
+        "_pageSize": {
+          "oneof": [
+            "pageSize"
+          ]
+        },
+        "_pageToken": {
+          "oneof": [
+            "pageToken"
+          ]
+        },
+        "_reverse": {
+          "oneof": [
+            "reverse"
+          ]
+        }
+      },
+      "fields": {
+        "pageSize": {
+          "type": "uint32",
+          "id": 1,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "pageToken": {
+          "type": "bytes",
+          "id": 2,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "reverse": {
+          "type": "bool",
+          "id": 3,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "shardId": {
+          "type": "uint32",
+          "id": 4
+        }
+      }
+    },
+    "FidsResponse": {
+      "oneofs": {
+        "_nextPageToken": {
+          "oneof": [
+            "nextPageToken"
+          ]
+        }
+      },
+      "fields": {
+        "fids": {
+          "rule": "repeated",
+          "type": "uint64",
+          "id": 1
+        },
+        "nextPageToken": {
+          "type": "bytes",
+          "id": 2,
+          "options": {
+            "proto3_optional": true
+          }
+        }
+      }
+    },
+    "MessagesResponse": {
+      "oneofs": {
+        "_nextPageToken": {
+          "oneof": [
+            "nextPageToken"
+          ]
+        }
+      },
+      "fields": {
+        "messages": {
+          "rule": "repeated",
+          "type": "Message",
+          "id": 1
+        },
+        "nextPageToken": {
+          "type": "bytes",
+          "id": 2,
+          "options": {
+            "proto3_optional": true
+          }
+        }
+      }
+    },
+    "CastsByParentRequest": {
+      "oneofs": {
+        "parent": {
+          "oneof": [
+            "parentCastId",
+            "parentUrl"
+          ]
+        },
+        "_pageSize": {
+          "oneof": [
+            "pageSize"
+          ]
+        },
+        "_pageToken": {
+          "oneof": [
+            "pageToken"
+          ]
+        },
+        "_reverse": {
+          "oneof": [
+            "reverse"
+          ]
+        }
+      },
+      "fields": {
+        "parentCastId": {
+          "type": "CastId",
+          "id": 1
+        },
+        "parentUrl": {
+          "type": "string",
+          "id": 5
+        },
+        "pageSize": {
+          "type": "uint32",
+          "id": 2,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "pageToken": {
+          "type": "bytes",
+          "id": 3,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "reverse": {
+          "type": "bool",
+          "id": 4,
+          "options": {
+            "proto3_optional": true
+          }
+        }
+      }
+    },
+    "ReactionRequest": {
+      "oneofs": {
+        "target": {
+          "oneof": [
+            "targetCastId",
+            "targetUrl"
+          ]
+        }
+      },
+      "fields": {
+        "fid": {
+          "type": "uint64",
+          "id": 1
+        },
+        "reactionType": {
+          "type": "ReactionType",
+          "id": 2
+        },
+        "targetCastId": {
+          "type": "CastId",
+          "id": 3
+        },
+        "targetUrl": {
+          "type": "string",
+          "id": 4
+        }
+      }
+    },
+    "ReactionsByFidRequest": {
+      "oneofs": {
+        "_reactionType": {
+          "oneof": [
+            "reactionType"
+          ]
+        },
+        "_pageSize": {
+          "oneof": [
+            "pageSize"
+          ]
+        },
+        "_pageToken": {
+          "oneof": [
+            "pageToken"
+          ]
+        },
+        "_reverse": {
+          "oneof": [
+            "reverse"
+          ]
+        }
+      },
+      "fields": {
+        "fid": {
+          "type": "uint64",
+          "id": 1
+        },
+        "reactionType": {
+          "type": "ReactionType",
+          "id": 2,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "pageSize": {
+          "type": "uint32",
+          "id": 3,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "pageToken": {
+          "type": "bytes",
+          "id": 4,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "reverse": {
+          "type": "bool",
+          "id": 5,
+          "options": {
+            "proto3_optional": true
+          }
+        }
+      }
+    },
+    "ReactionsByTargetRequest": {
+      "oneofs": {
+        "target": {
+          "oneof": [
+            "targetCastId",
+            "targetUrl"
+          ]
+        },
+        "_reactionType": {
+          "oneof": [
+            "reactionType"
+          ]
+        },
+        "_pageSize": {
+          "oneof": [
+            "pageSize"
+          ]
+        },
+        "_pageToken": {
+          "oneof": [
+            "pageToken"
+          ]
+        },
+        "_reverse": {
+          "oneof": [
+            "reverse"
+          ]
+        }
+      },
+      "fields": {
+        "targetCastId": {
+          "type": "CastId",
+          "id": 1
+        },
+        "targetUrl": {
+          "type": "string",
+          "id": 6
+        },
+        "reactionType": {
+          "type": "ReactionType",
+          "id": 2,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "pageSize": {
+          "type": "uint32",
+          "id": 3,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "pageToken": {
+          "type": "bytes",
+          "id": 4,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "reverse": {
+          "type": "bool",
+          "id": 5,
+          "options": {
+            "proto3_optional": true
+          }
+        }
+      }
+    },
+    "UserDataRequest": {
+      "fields": {
+        "fid": {
+          "type": "uint64",
+          "id": 1
+        },
+        "userDataType": {
+          "type": "UserDataType",
+          "id": 2
+        }
+      }
+    },
+    "OnChainEventRequest": {
+      "oneofs": {
+        "_pageSize": {
+          "oneof": [
+            "pageSize"
+          ]
+        },
+        "_pageToken": {
+          "oneof": [
+            "pageToken"
+          ]
+        },
+        "_reverse": {
+          "oneof": [
+            "reverse"
+          ]
+        }
+      },
+      "fields": {
+        "fid": {
+          "type": "uint64",
+          "id": 1
+        },
+        "eventType": {
+          "type": "OnChainEventType",
+          "id": 2
+        },
+        "pageSize": {
+          "type": "uint32",
+          "id": 3,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "pageToken": {
+          "type": "bytes",
+          "id": 4,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "reverse": {
+          "type": "bool",
+          "id": 5,
+          "options": {
+            "proto3_optional": true
+          }
+        }
+      }
+    },
+    "OnChainEventResponse": {
+      "oneofs": {
+        "_nextPageToken": {
+          "oneof": [
+            "nextPageToken"
+          ]
+        }
+      },
+      "fields": {
+        "events": {
+          "rule": "repeated",
+          "type": "OnChainEvent",
+          "id": 1
+        },
+        "nextPageToken": {
+          "type": "bytes",
+          "id": 2,
+          "options": {
+            "proto3_optional": true
+          }
+        }
+      }
+    },
+    "TierDetails": {
+      "fields": {
+        "tierType": {
+          "type": "TierType",
+          "id": 1
+        },
+        "expiresAt": {
+          "type": "uint64",
+          "id": 2
+        }
+      }
+    },
+    "StorageLimitsResponse": {
+      "fields": {
+        "limits": {
+          "rule": "repeated",
+          "type": "StorageLimit",
+          "id": 1
+        },
+        "units": {
+          "type": "uint32",
+          "id": 2
+        },
+        "unitDetails": {
+          "rule": "repeated",
+          "type": "StorageUnitDetails",
+          "id": 3
+        },
+        "tierSubscriptions": {
+          "rule": "repeated",
+          "type": "TierDetails",
+          "id": 4
+        }
+      }
+    },
+    "StoreType": {
+      "values": {
+        "STORE_TYPE_NONE": 0,
+        "STORE_TYPE_CASTS": 1,
+        "STORE_TYPE_LINKS": 2,
+        "STORE_TYPE_REACTIONS": 3,
+        "STORE_TYPE_USER_DATA": 4,
+        "STORE_TYPE_VERIFICATIONS": 5,
+        "STORE_TYPE_USERNAME_PROOFS": 6,
+        "STORE_TYPE_STORAGE_LENDS": 7
+      }
+    },
+    "StorageUnitDetails": {
+      "fields": {
+        "unitType": {
+          "type": "StorageUnitType",
+          "id": 1
+        },
+        "unitSize": {
+          "type": "uint32",
+          "id": 2
+        },
+        "purchasedUnitSize": {
+          "type": "uint32",
+          "id": 3
+        },
+        "lentUnitSize": {
+          "type": "uint32",
+          "id": 4
+        },
+        "borrowedUnitSize": {
+          "type": "uint32",
+          "id": 5
+        }
+      }
+    },
+    "StorageLimit": {
+      "fields": {
+        "storeType": {
+          "type": "StoreType",
+          "id": 1
+        },
+        "name": {
+          "type": "string",
+          "id": 2
+        },
+        "limit": {
+          "type": "uint64",
+          "id": 3
+        },
+        "used": {
+          "type": "uint64",
+          "id": 4
+        },
+        "earliestTimestamp": {
+          "type": "uint64",
+          "id": 5
+        },
+        "earliestHash": {
+          "type": "bytes",
+          "id": 6
+        }
+      }
+    },
+    "UsernameProofRequest": {
+      "fields": {
+        "name": {
+          "type": "bytes",
+          "id": 1
+        }
+      }
+    },
+    "UsernameProofsResponse": {
+      "fields": {
+        "proofs": {
+          "rule": "repeated",
+          "type": "UserNameProof",
+          "id": 1
+        }
+      }
+    },
+    "NameLookupRequest": {
+      "fields": {
+        "name": {
+          "type": "bytes",
+          "id": 1
+        },
+        "type": {
+          "type": "UserNameType",
+          "id": 2
+        }
+      }
+    },
+    "FidResponse": {
+      "fields": {
+        "fid": {
+          "type": "uint64",
+          "id": 1
+        }
+      }
+    },
+    "NameToAddressResponse": {
+      "oneofs": {
+        "_custodyAddress": {
+          "oneof": [
+            "custodyAddress"
+          ]
+        }
+      },
+      "fields": {
+        "fid": {
+          "type": "uint64",
+          "id": 1
+        },
+        "custodyAddress": {
+          "type": "bytes",
+          "id": 2,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "connectedAddresses": {
+          "rule": "repeated",
+          "type": "bytes",
+          "id": 3
+        }
+      }
+    },
+    "AddressLookupRequest": {
+      "fields": {
+        "address": {
+          "type": "bytes",
+          "id": 1
+        }
+      }
+    },
+    "AddressMatch": {
+      "fields": {
+        "fid": {
+          "type": "uint64",
+          "id": 1
+        },
+        "isCustody": {
+          "type": "bool",
+          "id": 2
+        },
+        "isVerified": {
+          "type": "bool",
+          "id": 3
+        }
+      }
+    },
+    "AddressToFidResponse": {
+      "fields": {
+        "matches": {
+          "rule": "repeated",
+          "type": "AddressMatch",
+          "id": 1
+        }
+      }
+    },
+    "ValidationResponse": {
+      "fields": {
+        "valid": {
+          "type": "bool",
+          "id": 1
+        },
+        "message": {
+          "type": "Message",
+          "id": 2
+        }
+      }
+    },
+    "VerificationRequest": {
+      "fields": {
+        "fid": {
+          "type": "uint64",
+          "id": 1
+        },
+        "address": {
+          "type": "bytes",
+          "id": 2
+        }
+      }
+    },
+    "SignerRequest": {
+      "fields": {
+        "fid": {
+          "type": "uint64",
+          "id": 1
+        },
+        "signer": {
+          "type": "bytes",
+          "id": 2
+        }
+      }
+    },
+    "SignerSource": {
+      "values": {
+        "SIGNER_SOURCE_NONE": 0,
+        "SIGNER_SOURCE_ONCHAIN": 1,
+        "SIGNER_SOURCE_OFFCHAIN": 2
+      }
+    },
+    "Signer": {
+      "oneofs": {
+        "_addedAt": {
+          "oneof": [
+            "addedAt"
+          ]
+        },
+        "_lastUsedAt": {
+          "oneof": [
+            "lastUsedAt"
+          ]
+        },
+        "_ttl": {
+          "oneof": [
+            "ttl"
+          ]
+        },
+        "_expiresAt": {
+          "oneof": [
+            "expiresAt"
+          ]
+        },
+        "_requestFid": {
+          "oneof": [
+            "requestFid"
+          ]
+        },
+        "_nonce": {
+          "oneof": [
+            "nonce"
+          ]
+        },
+        "_onchainEvent": {
+          "oneof": [
+            "onchainEvent"
+          ]
+        }
+      },
+      "fields": {
+        "source": {
+          "type": "SignerSource",
+          "id": 1
+        },
+        "key": {
+          "type": "bytes",
+          "id": 2
+        },
+        "keyType": {
+          "type": "uint32",
+          "id": 3
+        },
+        "fid": {
+          "type": "uint64",
+          "id": 4
+        },
+        "addedAt": {
+          "type": "uint64",
+          "id": 5,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "lastUsedAt": {
+          "type": "uint64",
+          "id": 6,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "ttl": {
+          "type": "uint32",
+          "id": 7,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "expiresAt": {
+          "type": "uint64",
+          "id": 8,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "scopes": {
+          "rule": "repeated",
+          "type": "int32",
+          "id": 9
+        },
+        "requestFid": {
+          "type": "uint64",
+          "id": 10,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "nonce": {
+          "type": "uint32",
+          "id": 11,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "onchainEvent": {
+          "type": "OnChainEvent",
+          "id": 12,
+          "options": {
+            "proto3_optional": true
+          }
+        }
+      }
+    },
+    "SignerResponse": {
+      "fields": {
+        "signer": {
+          "type": "Signer",
+          "id": 1
+        }
+      }
+    },
+    "SignersByFidResponse": {
+      "oneofs": {
+        "_nextPageToken": {
+          "oneof": [
+            "nextPageToken"
+          ]
+        }
+      },
+      "fields": {
+        "signers": {
+          "rule": "repeated",
+          "type": "Signer",
+          "id": 1
+        },
+        "nextPageToken": {
+          "type": "bytes",
+          "id": 2,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "gaslessSignerCount": {
+          "type": "uint32",
+          "id": 3
+        },
+        "gaslessSignerLimit": {
+          "type": "uint32",
+          "id": 4
+        },
+        "currentUserNonce": {
+          "type": "uint32",
+          "id": 5
+        },
+        "requesterFidNonces": {
+          "keyType": "uint64",
+          "type": "uint32",
+          "id": 6
+        }
+      }
+    },
+    "SignersByFidRequest": {
+      "oneofs": {
+        "_pageSize": {
+          "oneof": [
+            "pageSize"
+          ]
+        },
+        "_pageToken": {
+          "oneof": [
+            "pageToken"
+          ]
+        },
+        "_reverse": {
+          "oneof": [
+            "reverse"
+          ]
+        }
+      },
+      "fields": {
+        "fid": {
+          "type": "uint64",
+          "id": 1
+        },
+        "pageSize": {
+          "type": "uint32",
+          "id": 2,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "pageToken": {
+          "type": "bytes",
+          "id": 3,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "reverse": {
+          "type": "bool",
+          "id": 4,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "requesterFids": {
+          "rule": "repeated",
+          "type": "uint64",
+          "id": 5
+        }
+      }
+    },
+    "LinkRequest": {
+      "oneofs": {
+        "target": {
+          "oneof": [
+            "targetFid"
+          ]
+        }
+      },
+      "fields": {
+        "fid": {
+          "type": "uint64",
+          "id": 1
+        },
+        "linkType": {
+          "type": "string",
+          "id": 2
+        },
+        "targetFid": {
+          "type": "uint64",
+          "id": 3
+        }
+      }
+    },
+    "LinksByFidRequest": {
+      "oneofs": {
+        "_linkType": {
+          "oneof": [
+            "linkType"
+          ]
+        },
+        "_pageSize": {
+          "oneof": [
+            "pageSize"
+          ]
+        },
+        "_pageToken": {
+          "oneof": [
+            "pageToken"
+          ]
+        },
+        "_reverse": {
+          "oneof": [
+            "reverse"
+          ]
+        }
+      },
+      "fields": {
+        "fid": {
+          "type": "uint64",
+          "id": 1
+        },
+        "linkType": {
+          "type": "string",
+          "id": 2,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "pageSize": {
+          "type": "uint32",
+          "id": 3,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "pageToken": {
+          "type": "bytes",
+          "id": 4,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "reverse": {
+          "type": "bool",
+          "id": 5,
+          "options": {
+            "proto3_optional": true
+          }
+        }
+      }
+    },
+    "LinksByTargetRequest": {
+      "oneofs": {
+        "target": {
+          "oneof": [
+            "targetFid"
+          ]
+        },
+        "_linkType": {
+          "oneof": [
+            "linkType"
+          ]
+        },
+        "_pageSize": {
+          "oneof": [
+            "pageSize"
+          ]
+        },
+        "_pageToken": {
+          "oneof": [
+            "pageToken"
+          ]
+        },
+        "_reverse": {
+          "oneof": [
+            "reverse"
+          ]
+        }
+      },
+      "fields": {
+        "targetFid": {
+          "type": "uint64",
+          "id": 1
+        },
+        "linkType": {
+          "type": "string",
+          "id": 2,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "pageSize": {
+          "type": "uint32",
+          "id": 3,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "pageToken": {
+          "type": "bytes",
+          "id": 4,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "reverse": {
+          "type": "bool",
+          "id": 5,
+          "options": {
+            "proto3_optional": true
+          }
+        }
+      }
+    },
+    "IdRegistryEventByAddressRequest": {
+      "fields": {
+        "address": {
+          "type": "bytes",
+          "id": 1
+        }
+      }
+    },
+    "SubmitBulkMessagesRequest": {
+      "fields": {
+        "messages": {
+          "rule": "repeated",
+          "type": "Message",
+          "id": 1
+        }
+      }
+    },
+    "MessageError": {
+      "fields": {
+        "hash": {
+          "type": "bytes",
+          "id": 1
+        },
+        "errCode": {
+          "type": "string",
+          "id": 2
+        },
+        "message": {
+          "type": "string",
+          "id": 3
+        }
+      }
+    },
+    "BulkMessageResponse": {
+      "oneofs": {
+        "response": {
+          "oneof": [
+            "message",
+            "messageError"
+          ]
+        }
+      },
+      "fields": {
+        "message": {
+          "type": "Message",
+          "id": 1
+        },
+        "messageError": {
+          "type": "MessageError",
+          "id": 2
+        }
+      }
+    },
+    "SubmitBulkMessagesResponse": {
+      "fields": {
+        "messages": {
+          "rule": "repeated",
+          "type": "BulkMessageResponse",
+          "id": 1
+        }
+      }
+    },
+    "TrieNodeMetadataRequest": {
+      "fields": {
+        "shardId": {
+          "type": "uint32",
+          "id": 1
+        },
+        "prefix": {
+          "type": "bytes",
+          "id": 2
+        }
+      }
+    },
+    "TrieNodeMetadataResponse": {
+      "fields": {
+        "prefix": {
+          "type": "bytes",
+          "id": 1
+        },
+        "numMessages": {
+          "type": "uint64",
+          "id": 2
+        },
+        "hash": {
+          "type": "string",
+          "id": 3
+        },
+        "children": {
+          "rule": "repeated",
+          "type": "TrieNodeMetadataResponse",
+          "id": 4
+        }
+      }
+    },
+    "EventsRequest": {
+      "oneofs": {
+        "_shardIndex": {
+          "oneof": [
+            "shardIndex"
+          ]
+        },
+        "_stopId": {
+          "oneof": [
+            "stopId"
+          ]
+        },
+        "_pageSize": {
+          "oneof": [
+            "pageSize"
+          ]
+        },
+        "_pageToken": {
+          "oneof": [
+            "pageToken"
+          ]
+        },
+        "_reverse": {
+          "oneof": [
+            "reverse"
+          ]
+        }
+      },
+      "fields": {
+        "startId": {
+          "type": "uint64",
+          "id": 1
+        },
+        "shardIndex": {
+          "type": "uint32",
+          "id": 2,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "stopId": {
+          "type": "uint64",
+          "id": 3,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "pageSize": {
+          "type": "uint32",
+          "id": 4,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "pageToken": {
+          "type": "bytes",
+          "id": 5,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "reverse": {
+          "type": "bool",
+          "id": 6,
+          "options": {
+            "proto3_optional": true
+          }
+        }
+      }
+    },
+    "EventsResponse": {
+      "oneofs": {
+        "_nextPageToken": {
+          "oneof": [
+            "nextPageToken"
+          ]
+        }
+      },
+      "fields": {
+        "events": {
+          "rule": "repeated",
+          "type": "HubEvent",
+          "id": 1
+        },
+        "nextPageToken": {
+          "type": "bytes",
+          "id": 2,
+          "options": {
+            "proto3_optional": true
+          }
+        }
+      }
+    },
+    "FidAddressTypeRequest": {
+      "fields": {
+        "fid": {
+          "type": "uint64",
+          "id": 1
+        },
+        "address": {
+          "type": "bytes",
+          "id": 2
+        }
+      }
+    },
+    "FidAddressTypeResponse": {
+      "fields": {
+        "isCustody": {
+          "type": "bool",
+          "id": 1
+        },
+        "isAuth": {
+          "type": "bool",
+          "id": 2
+        },
+        "isVerified": {
+          "type": "bool",
+          "id": 3
+        }
+      }
+    },
+    "ContactInfoBody": {
+      "fields": {
+        "gossipAddress": {
+          "type": "string",
+          "id": 1
+        },
+        "peerId": {
+          "type": "bytes",
+          "id": 2
+        },
+        "snapchainVersion": {
+          "type": "string",
+          "id": 3
+        },
+        "network": {
+          "type": "FarcasterNetwork",
+          "id": 4
+        },
+        "timestamp": {
+          "type": "uint64",
+          "id": 5
+        },
+        "announceRpcAddress": {
+          "type": "string",
+          "id": 6
+        },
+        "capabilities": {
+          "rule": "repeated",
+          "type": "string",
+          "id": 7
+        }
+      }
+    },
+    "GetConnectedPeersRequest": {
+      "fields": {}
+    },
+    "GetConnectedPeersResponse": {
+      "fields": {
+        "contacts": {
+          "rule": "repeated",
+          "type": "ContactInfoBody",
+          "id": 1
+        },
+        "peers": {
+          "rule": "repeated",
+          "type": "ConnectedPeer",
+          "id": 2
+        }
+      }
+    },
+    "ContactSource": {
+      "values": {
+        "CONTACT_SOURCE_UNKNOWN": 0,
+        "CONTACT_SOURCE_COLLECTED": 1,
+        "CONTACT_SOURCE_DERIVED": 2
+      }
+    },
+    "ConnectedPeer": {
+      "fields": {
+        "source": {
+          "type": "ContactSource",
+          "id": 1
+        },
+        "contactInfo": {
+          "type": "ContactInfoBody",
+          "id": 2
+        },
+        "peerId": {
+          "type": "bytes",
+          "id": 3
+        },
+        "observedAddress": {
+          "type": "string",
+          "id": 4
+        }
+      }
+    },
+    "MeshNodeType": {
+      "values": {
+        "MESH_NODE_TYPE_UNKNOWN": 0,
+        "MESH_NODE_TYPE_VALIDATOR": 1,
+        "MESH_NODE_TYPE_NON_VALIDATOR": 2
+      }
+    },
+    "GetMeshViewRequest": {
+      "fields": {
+        "validatorsOnly": {
+          "type": "bool",
+          "id": 1
+        },
+        "ttl": {
+          "type": "uint32",
+          "id": 2
+        },
+        "visitedPeerIds": {
+          "rule": "repeated",
+          "type": "bytes",
+          "id": 3
+        }
+      }
+    },
+    "GossipRate": {
+      "fields": {
+        "topic": {
+          "type": "string",
+          "id": 1
+        },
+        "msgsPerSec": {
+          "type": "double",
+          "id": 2
+        },
+        "bytesPerSec": {
+          "type": "double",
+          "id": 3
+        },
+        "totalMsgs": {
+          "type": "uint64",
+          "id": 4
+        },
+        "totalBytes": {
+          "type": "uint64",
+          "id": 5
+        }
+      }
+    },
+    "TopicMembership": {
+      "fields": {
+        "topic": {
+          "type": "string",
+          "id": 1
+        },
+        "subscribed": {
+          "type": "bool",
+          "id": 2
+        },
+        "inMesh": {
+          "type": "bool",
+          "id": 3
+        }
+      }
+    },
+    "MeshSelf": {
+      "fields": {
+        "peerId": {
+          "type": "bytes",
+          "id": 1
+        },
+        "consensusPublicKey": {
+          "type": "bytes",
+          "id": 2
+        },
+        "isValidator": {
+          "type": "bool",
+          "id": 3
+        },
+        "gossipAddress": {
+          "type": "string",
+          "id": 4
+        },
+        "rpcAddress": {
+          "type": "string",
+          "id": 5
+        },
+        "snapchainVersion": {
+          "type": "string",
+          "id": 6
+        },
+        "network": {
+          "type": "FarcasterNetwork",
+          "id": 7
+        },
+        "subscribedTopics": {
+          "rule": "repeated",
+          "type": "string",
+          "id": 8
+        },
+        "consensusMeshSize": {
+          "type": "uint32",
+          "id": 9
+        },
+        "currentHeight": {
+          "type": "uint64",
+          "id": 10
+        }
+      }
+    },
+    "MeshPeer": {
+      "oneofs": {
+        "_consensusPublicKey": {
+          "oneof": [
+            "consensusPublicKey"
+          ]
+        }
+      },
+      "fields": {
+        "peerId": {
+          "type": "bytes",
+          "id": 1
+        },
+        "nodeType": {
+          "type": "MeshNodeType",
+          "id": 2
+        },
+        "consensusPublicKey": {
+          "type": "bytes",
+          "id": 3,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "connected": {
+          "type": "bool",
+          "id": 4
+        },
+        "directPeer": {
+          "type": "bool",
+          "id": 5
+        },
+        "contactSource": {
+          "type": "ContactSource",
+          "id": 6
+        },
+        "contactInfo": {
+          "type": "ContactInfoBody",
+          "id": 7
+        },
+        "observedAddress": {
+          "type": "string",
+          "id": 8
+        },
+        "topics": {
+          "rule": "repeated",
+          "type": "TopicMembership",
+          "id": 9
+        },
+        "gossipRates": {
+          "rule": "repeated",
+          "type": "GossipRate",
+          "id": 10
+        }
+      }
+    },
+    "MeshView": {
+      "fields": {
+        "local": {
+          "type": "MeshSelf",
+          "id": 1
+        },
+        "peers": {
+          "rule": "repeated",
+          "type": "MeshPeer",
+          "id": 2
+        },
+        "generatedAt": {
+          "type": "uint64",
+          "id": 3
+        }
+      }
+    },
+    "UnreachableNode": {
+      "fields": {
+        "peerId": {
+          "type": "bytes",
+          "id": 1
+        },
+        "consensusPublicKey": {
+          "type": "bytes",
+          "id": 2
+        },
+        "reason": {
+          "type": "string",
+          "id": 3
+        }
+      }
+    },
+    "MeshTopology": {
+      "fields": {
+        "nodes": {
+          "rule": "repeated",
+          "type": "MeshView",
+          "id": 1
+        },
+        "unreachable": {
+          "rule": "repeated",
+          "type": "UnreachableNode",
+          "id": 2
+        },
+        "generatedAt": {
+          "type": "uint64",
+          "id": 3
+        }
+      }
+    },
+    "HyperBlockMetadata": {
+      "fields": {
+        "canonicalBlockId": {
+          "type": "uint64",
+          "id": 1
+        },
+        "parentHash": {
+          "type": "bytes",
+          "id": 2
+        },
+        "hyperStateRoot": {
+          "type": "bytes",
+          "id": 3
+        },
+        "extraRulesVersion": {
+          "type": "uint32",
+          "id": 4
+        },
+        "retainedMessageCount": {
+          "type": "uint64",
+          "id": 5
+        }
+      }
+    },
+    "HyperEnvelope": {
+      "fields": {
+        "metadata": {
+          "type": "HyperBlockMetadata",
+          "id": 1
+        },
+        "payload": {
+          "type": "bytes",
+          "id": 2
+        }
+      }
+    },
+    "ReplicationService": {
+      "methods": {
+        "GetShardSnapshotMetadata": {
+          "requestType": "GetShardSnapshotMetadataRequest",
+          "responseType": "GetShardSnapshotMetadataResponse"
+        },
+        "GetShardTransactions": {
+          "requestType": "GetShardTransactionsRequest",
+          "responseType": "GetShardTransactionsResponse"
+        }
+      }
+    },
+    "GetShardSnapshotMetadataRequest": {
+      "fields": {
+        "shardId": {
+          "type": "uint32",
+          "id": 1
+        }
+      }
+    },
+    "ShardSnapshotMetadata": {
+      "oneofs": {
+        "_shardChunk": {
+          "oneof": [
+            "shardChunk"
+          ]
+        },
+        "_block": {
+          "oneof": [
+            "block"
+          ]
+        }
+      },
+      "fields": {
+        "shardId": {
+          "type": "uint32",
+          "id": 1
+        },
+        "height": {
+          "type": "uint64",
+          "id": 2
+        },
+        "timestamp": {
+          "type": "uint64",
+          "id": 3
+        },
+        "shardChunk": {
+          "type": "ShardChunk",
+          "id": 5,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "block": {
+          "type": "Block",
+          "id": 6,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "numItems": {
+          "type": "uint64",
+          "id": 7
+        }
+      }
+    },
+    "GetShardSnapshotMetadataResponse": {
+      "fields": {
+        "snapshots": {
+          "rule": "repeated",
+          "type": "ShardSnapshotMetadata",
+          "id": 1
+        }
+      }
+    },
+    "GetShardTransactionsRequest": {
+      "oneofs": {
+        "_pageToken": {
+          "oneof": [
+            "pageToken"
+          ]
+        }
+      },
+      "fields": {
+        "shardId": {
+          "type": "uint32",
+          "id": 1
+        },
+        "height": {
+          "type": "uint64",
+          "id": 2
+        },
+        "trieVirtualShard": {
+          "type": "uint32",
+          "id": 3
+        },
+        "pageToken": {
+          "type": "string",
+          "id": 4,
+          "options": {
+            "proto3_optional": true
+          }
+        }
+      }
+    },
+    "GetShardTransactionsResponse": {
+      "oneofs": {
+        "_nextPageToken": {
+          "oneof": [
+            "nextPageToken"
+          ]
+        }
+      },
+      "fields": {
+        "trieMessages": {
+          "rule": "repeated",
+          "type": "ShardTrieEntryWithMessage",
+          "id": 1
+        },
+        "fidAccountRoots": {
+          "rule": "repeated",
+          "type": "FidAccountRootHash",
+          "id": 2
+        },
+        "nextPageToken": {
+          "type": "string",
+          "id": 3,
+          "options": {
+            "proto3_optional": true
+          }
+        }
+      }
+    },
+    "ShardTrieEntryWithMessage": {
+      "oneofs": {
+        "trieMessage": {
+          "oneof": [
+            "userMessage",
+            "onChainEvent",
+            "fnameTransfer"
+          ]
+        }
+      },
+      "fields": {
+        "trieKey": {
+          "type": "bytes",
+          "id": 1
+        },
+        "userMessage": {
+          "type": "Message",
+          "id": 2
+        },
+        "onChainEvent": {
+          "type": "OnChainEvent",
+          "id": 3
+        },
+        "fnameTransfer": {
+          "type": "FnameTransfer",
+          "id": 4
+        }
+      }
+    },
+    "FidAccountRootHash": {
+      "fields": {
+        "fid": {
+          "type": "uint64",
+          "id": 1
+        },
+        "accountRootHash": {
+          "type": "bytes",
+          "id": 2
+        },
+        "numMessages": {
+          "type": "uint64",
+          "id": 3
+        }
+      }
+    },
+    "ReplicationTriePartStatus": {
+      "oneofs": {
+        "_nextPageToken": {
+          "oneof": [
+            "nextPageToken"
+          ]
+        },
+        "_lastFid": {
+          "oneof": [
+            "lastFid"
+          ]
+        }
+      },
+      "fields": {
+        "shardId": {
+          "type": "uint32",
+          "id": 1
+        },
+        "height": {
+          "type": "uint64",
+          "id": 2
+        },
+        "virtualTrieShard": {
+          "type": "uint32",
+          "id": 3
+        },
+        "nextPageToken": {
+          "type": "string",
+          "id": 4,
+          "options": {
+            "proto3_optional": true
+          }
+        },
+        "lastResponse": {
+          "type": "uint32",
+          "id": 5
+        },
+        "lastFid": {
+          "type": "uint64",
+          "id": 6,
+          "options": {
+            "proto3_optional": true
+          }
+        }
+      }
+    },
+    "Empty": {
+      "fields": {}
+    },
+    "RetryBlockNumberRange": {
+      "fields": {
+        "startBlockNumber": {
+          "type": "uint64",
+          "id": 1
+        },
+        "stopBlockNumber": {
+          "type": "uint64",
+          "id": 2
+        }
+      }
+    },
+    "RetryOnchainEventsRequest": {
+      "oneofs": {
+        "kind": {
+          "oneof": [
+            "fid",
+            "blockRange"
+          ]
+        }
+      },
+      "fields": {
+        "fid": {
+          "type": "uint64",
+          "id": 1
+        },
+        "blockRange": {
+          "type": "RetryBlockNumberRange",
+          "id": 2
+        }
+      }
+    },
+    "RetryFnameRequest": {
+      "oneofs": {
+        "kind": {
+          "oneof": [
+            "fid",
+            "fname"
+          ]
+        }
+      },
+      "fields": {
+        "fid": {
+          "type": "uint64",
+          "id": 1
+        },
+        "fname": {
+          "type": "string",
+          "id": 2
+        }
+      }
+    },
+    "UploadSnapshotRequest": {
+      "fields": {
+        "shardIndexes": {
+          "rule": "repeated",
+          "type": "uint32",
+          "id": 1
+        }
+      }
+    },
+    "RunOnchainEventsMigrationRequest": {
+      "fields": {
+        "shardId": {
+          "type": "uint64",
+          "id": 1
+        }
+      }
+    },
+    "AdminService": {
+      "methods": {
+        "SubmitOnChainEvent": {
+          "requestType": "OnChainEvent",
+          "responseType": "OnChainEvent"
+        },
+        "SubmitUserNameProof": {
+          "requestType": "UserNameProof",
+          "responseType": "UserNameProof"
+        },
+        "UploadSnapshot": {
+          "requestType": "UploadSnapshotRequest",
+          "responseType": "Empty"
+        },
+        "RetryOnchainEvents": {
+          "requestType": "RetryOnchainEventsRequest",
+          "responseType": "Empty"
+        },
+        "RetryFnameEvents": {
+          "requestType": "RetryFnameRequest",
+          "responseType": "Empty"
+        },
+        "RunOnchainEventsMigration": {
+          "requestType": "RunOnchainEventsMigrationRequest",
+          "responseType": "Empty"
+        }
+      }
+    },
+    "ContactInfo": {
+      "fields": {
+        "body": {
+          "type": "ContactInfoBody",
+          "id": 1
+        }
+      }
+    },
+    "GossipMessage": {
+      "oneofs": {
+        "gossipMessage": {
+          "oneof": [
+            "consensus",
+            "fullProposal",
+            "mempoolMessage",
+            "status",
+            "readNodeMessage",
+            "contactInfoMessage",
+            "hyperEnvelope"
+          ]
+        }
+      },
+      "fields": {
+        "consensus": {
+          "type": "ConsensusMessage",
+          "id": 1
+        },
+        "fullProposal": {
+          "type": "FullProposal",
+          "id": 2
+        },
+        "mempoolMessage": {
+          "type": "MempoolMessage",
+          "id": 3
+        },
+        "status": {
+          "type": "StatusMessage",
+          "id": 4
+        },
+        "readNodeMessage": {
+          "type": "ReadNodeMessage",
+          "id": 5
+        },
+        "contactInfoMessage": {
+          "type": "ContactInfo",
+          "id": 6
+        },
+        "hyperEnvelope": {
+          "type": "HyperEnvelope",
+          "id": 7
+        }
+      }
+    },
+    "OnChainEventState": {
+      "fields": {
+        "lastL2Block": {
+          "type": "uint64",
+          "id": 3
+        }
+      }
+    },
+    "FnameState": {
+      "fields": {
+        "lastFnameProof": {
+          "type": "uint64",
+          "id": 3
+        }
+      }
+    },
+    "DbTrieNode": {
+      "fields": {
+        "key": {
+          "type": "bytes",
+          "id": 1
+        },
+        "childChars": {
+          "rule": "repeated",
+          "type": "uint32",
+          "id": 2
+        },
+        "items": {
+          "type": "uint32",
+          "id": 3
+        },
+        "childHashes": {
+          "keyType": "uint32",
+          "type": "bytes",
+          "id": 4
+        }
+      }
+    },
+    "DbMerkleTrieMetadata": {
+      "fields": {
+        "outdatedHash": {
+          "type": "bool",
+          "id": 1
+        }
+      }
+    }
+  }
+}

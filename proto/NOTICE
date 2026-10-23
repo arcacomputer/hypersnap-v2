@@ -1,0 +1,8 @@
+The files in proto/definitions/ are the Hypersnap protocol definitions,
+taken from https://github.com/farcasterorg/hypersnap (GPL-3.0). Those
+definitions descend from the Snapchain protocol published by
+https://github.com/farcasterxyz/snapchain under the MIT license.
+
+This repository distributes them under GPL-3.0-only, the same license as
+Hypersnap, which the MIT license permits. See the repository LICENSE and
+the README license section.

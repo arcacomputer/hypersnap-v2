@@ -1,0 +1,59 @@
+{
+  "recordedFrom": "https://snap.farcaster.xyz:3383",
+  "httpInfo": "https://snap.farcaster.xyz:3381/v1/info",
+  "oracle": "https://haatz.quilibrium.com",
+  "recordedAt": "2026-10-23T03:54:17.501Z",
+  "nodeVersion": "0.14.2",
+  "units": [
+    {
+      "kind": "block",
+      "shard": 0,
+      "height": 48708453,
+      "file": "block-shard0-48708453.pb",
+      "hash": "0x661420905bd04584f62e1cfac7f0855d624196487ee47471e5642aadf279ffd8",
+      "messages": 0,
+      "signers": 5,
+      "validators": 7
+    },
+    {
+      "kind": "block",
+      "shard": 0,
+      "height": 48708454,
+      "file": "block-shard0-48708454.pb",
+      "hash": "0x6007d06bda55ab0ecca503030f4ea525ebc97da6742fb8ca3b253f301b481ebe",
+      "messages": 0,
+      "signers": 5,
+      "validators": 7
+    },
+    {
+      "kind": "chunk",
+      "shard": 2,
+      "height": 49220041,
+      "file": "chunk-shard2-49220041.pb",
+      "hash": "0x1c914569f7b2e1ff4648d7a7539228179e16bf70704f12010597560c954117e6",
+      "messages": 1,
+      "signers": 5,
+      "validators": 7
+    },
+    {
+      "kind": "chunk",
+      "shard": 2,
+      "height": 49220042,
+      "file": "chunk-shard2-49220042.pb",
+      "hash": "0x198ea3948af21d65642662c5d96fe2a41375e51110ea2d87eb0038afd3d0c0c1",
+      "messages": 0,
+      "signers": 7,
+      "validators": 7
+    }
+  ],
+  "oracleNotes": [
+    {
+      "height": 49220041,
+      "agreement": "match"
+    },
+    {
+      "height": 49220042,
+      "agreement": "match"
+    }
+  ]
+}
